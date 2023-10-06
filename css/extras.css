@@ -1,0 +1,16 @@
+#idiomaFocus1,
+#idiomaFocus2 {
+  cursor: pointer;
+}
+
+#idiomaFocus {
+  color: yellow;
+  /* clip-path: inset(0 100% 0 0); */
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.change {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}

@@ -1,11 +1,12 @@
 * {
   padding: 0;
   box-sizing: border-box;
+  /* cursor: url(../assets/garrapequeñablanca.svg), auto; */
 }
 
 body {
   background: black;
-  height: 180vh;
+  height: 205vh;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -27,19 +28,30 @@ body {
   width: 1400px;
   height: 100%;
   margin-top: 5%;
-  grid-template-columns: repeat(4, minmax(1fr, 340px));
-  grid-template-rows: repeat(6, minmax(300px, 1fr));
+  margin-bottom: 5%;
+  grid-template-columns: repeat(4, minmax(1fr, 350px));
+  grid-template-rows: repeat(6, minmax(300px, 350px));
   gap: 20px;
   background-color: black;
   grid-template-areas:
     "hero hero hero idioma"
     "hero hero hero ccolor"
     "edad linkedin proyectos proyectos"
-    "github github 0 0"
-    "musica musica 0 0"
-    "wsp dia dia certis";
+    "github github stack ingles"
+    "musica musica discord correo"
+    "wsp youtube youtube certis";
 }
 
+.main__hero__title {
+  font-size: 6rem;
+  text-wrap: wrap;
+  max-width: 600px;
+}
+.main__hero__paragraph {
+  color: rgb(214, 214, 214);
+  text-wrap: wrap;
+  font-size: 2rem;
+}
 /* .main__hero__image::after {
   content: "";
   grid-area: hero;
@@ -82,10 +94,6 @@ body {
 
 .main__change__musica {
   grid-area: musica;
-}
-
-.main__dia {
-  grid-area: dia;
 }
 
 /* IDIOMA */
@@ -132,7 +140,6 @@ body {
 }
 
 .main__change__edad__grid > span:nth-child(1) {
-  color: burlywood;
   justify-self: center;
 }
 .main__change__edad__grid > span:nth-child(2) {
@@ -191,6 +198,7 @@ body {
 /*STACK*/
 .main__stack {
   background: #654037;
+  grid-area: stack;
 }
 
 .main__stack__container {
@@ -215,6 +223,7 @@ body {
 
 .main__ingles {
   background-color: #2c8884;
+  grid-area: ingles;
 }
 .main__ingles__grid {
   display: grid;
@@ -257,9 +266,10 @@ body {
   background-color: unset;
 }
 /*MUSICA*/
-
+/*DISCORD*/
 .main__discord {
   background-color: #3baa8d;
+  grid-area: discord;
 }
 
 .main__discord__container {
@@ -272,12 +282,13 @@ body {
 .main__discord__image {
   width: 30px;
 }
+/*DISCORD*/
+/*CORREO*/
 
 .main__correo {
+  grid-area: correo;
   background-color: #353167;
 }
-
-/*CORREO*/
 
 .main__correo__image {
   width: 130px;
@@ -289,6 +300,7 @@ body {
 
 .main__wsp {
   background-color: #244154;
+  grid-area: wsp;
 }
 
 .main__wsp__image {
@@ -316,3 +328,14 @@ body {
   overflow: visible;
   position: absolute;
 }
+
+/*YOUTUBE*/
+
+.main__yt {
+  grid-area: youtube;
+}
+.main__yt__image {
+  width: 140px;
+}
+
+/*YOUTUBE*/

@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Said Tech</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/extras.css" />
   </head>
   <body>
     <main class="main">
       <div class="container main__hero__image">
-        <div>
-          <h1>Hola, soy Said Uceda</h1>
-          <p>
-            Soy Ingeniero Industrial con más de 4 años de experiencia Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Ad iure
-            repudiandae doloremque soluta eaque harum ipsa, exercitationem minus
-            cum assumenda sequi distinctio in possimus sint, nulla pariatur
-            tempore. Possimus, adipisci!
+        <div class="main__hero__container">
+          <h1 class="main__hero__title change">Hola, soy Said Uceda</h1>
+          <p class="main__hero__paragraph change">
+            Ingeniero Industrial con más de 4 años de experiencia. Implemento
+            tecnología a las empresas. Te invito a que revises mis redes
+            sociales y conozcas mi trabajo
           </p>
         </div>
       </div>
       <div class="container main__change__idioma">
         <div class="main__change__idioma__grid">
-          <span>EN</span>
-          <span>EN</span>
-          <span>ES</span>
+          <span id="idiomaFocus">EN</span>
+          <span id="idiomaFocus1" onclick="cambiarIdiomaIngles()">EN</span>
+          <span id="idiomaFocus2" onclick="cambiarIdiomaEspañol()">ES</span>
         </div>
       </div>
       <div class="container main__change__ccolor">
@@ -38,9 +37,9 @@
       </div>
       <div class="container main__change__edad">
         <div class="main__change__edad__grid">
-          <span>EDAD</span>
+          <span class="change" id="main__edad">EDAD</span>
           <span>26</span>
-          <span>AÑOS</span>
+          <span class="change" id="main__años">AÑOS</span>
         </div>
       </div>
       <div class="container main__change__linkedin">
@@ -102,8 +101,8 @@
       </div>
       <div class="container main__ingles">
         <div class="main__ingles__grid">
-          <span>NIVEL DE INGLES</span>
-          <span class="main__ingles__text">B2</span>
+          <span class="change" id="main__ingles">NIVEL DE INGLES</span>
+          <span class="main__ingles__text change">B2</span>
           <span>EF SET</span>
         </div>
       </div>
@@ -118,27 +117,26 @@
       </div>
       <div class="container main__discord">
         <div class="main__discord__container">
-          <img src="assets/discord.svg" alt="" class="main__discord__image" />En
-          linea
+          <img src="assets/discord.svg" alt="" class="main__discord__image" />
+          <span class="change" id="main__discord__text">En linea</span>
         </div>
       </div>
       <div class="container main__correo">
-        <img src="assets/msg.svg" class="main__correo__image" alt="" />
+        <a href="mailto:said.tech.pe@gmail.com" target="_blank">
+          <img src="assets/msg.svg" class="main__correo__image" alt=""
+        /></a>
       </div>
       <div class="container main__wsp">
-        <img class="main__wsp__image" src="assets/wsp.svg" alt="" />
+        <a href="https://bit.ly/3qTPD7u" target="_blank"
+          ><img class="main__wsp__image" src="assets/wsp.svg" alt=""
+        /></a>
       </div>
-      <div class="container main__dia">
-        <div class="main__dia__container">
-          <span class="main__dia__title"></span class="main__dia__subtitle"><span class="main__dia__hora"></span ><span class="main__dia__lugar"></span
-          ><span></span>
-          <div><img src="" alt="" /></div>
-        </div>
+      <div class="container main__yt">
+        <a href="https://www.youtube.com/@SaidTech-bv2en" target="_blank"
+          ><img src="assets/youtube.svg" class="main__yt__image"
+        /></a>
       </div>
-      <div class="container main__foto">
-        <div>cola</div>
-      </div>
-      <div class="container main__change__certificados"><div>certis</div></div>
+
       <div class="main__hero__image__cat">
         <img
           src="assets/cat.svg"
@@ -147,19 +145,29 @@
           alt=""
         />
       </div>
+
       <div class="container main__change__proyectos--text">
-        <div>NO NECESITO POSICION ABSOLUTA!</div>
+        <div class="main__projects__text change">
+          NO NECESITO POSICION ABSOLUTA!
+        </div>
       </div>
+
       <div class="container main__musica--text">
-        <div>ESCUCHO VARIOS GENEROS DE MUSICA</div>
+        <div class="change" id="main__music__text">
+          ESCUCHO VARIOS GENEROS DE MUSICA
+        </div>
       </div>
       <!-- <div class="main__hero__image__cat">
        
       </div> -->
 
-       <div class="container main__cola">
-        <img src="assets/cola.svg" class="main__cola__image" alt="">
+      <div class="container main__cola">
+        <img src="assets/cola.svg" class="main__cola__image" alt="" />
       </div>
     </main>
+
+    <script src="./js/index.js"></script>
+    <script></script>
+    <script src="./js/translate.js"></script>
   </body>
 </html>

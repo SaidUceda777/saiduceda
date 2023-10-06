@@ -3,5 +3,5 @@
   <path d="M307.5,373.5c0,13.81-13.43,25-30,25s-27.26-11.47-30-25c-3.45-17.06,11.58-26.74,30-25C294,350.06,307.5,359.69,307.5,373.5Z" fill="#fff"/>
   <ellipse cx="276.08" cy="364.4" rx="5" ry="13" transform="translate(-118.42 133.36) rotate(-22.5)" stroke="#000" stroke-miterlimit="10"/>
   <path d="M403.46,339.5c7.44,11.63,24.79,13.83,38.75,4.9S459,320.06,454,307.18c-6.28-16.23-24.16-16.29-38.74-4.9C402.22,312.48,396,327.87,403.46,339.5Z" fill="#fff"/>
-  <ellipse cx="425.5" cy="315.5" rx="5" ry="13" transform="translate(-88.34 186.81) rotate(-22.5)" stroke="#000" stroke-miterlimit="10"/>
+  <ellipse fill="000" cx="425.5" cy="315.5" rx="5" ry="13" transform="translate(-88.34 186.81) rotate(-22.5)" stroke="#000" stroke-miterlimit="10"/>
 </svg>
