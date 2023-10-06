@@ -27,7 +27,7 @@ body {
   width: 1400px;
   height: 100%;
   margin-top: 5%;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(1fr, 340px));
   grid-template-rows: repeat(6, minmax(300px, 1fr));
   gap: 20px;
   background-color: black;
@@ -37,7 +37,7 @@ body {
     "edad linkedin proyectos proyectos"
     "github github 0 0"
     "musica musica 0 0"
-    "dia dia dia dia";
+    "wsp dia dia certis";
 }
 
 /* .main__hero__image::after {
@@ -60,7 +60,7 @@ body {
 .main__hero__image {
   grid-area: hero;
   z-index: 1;
-  padding-right: 320px;
+  padding-right: 350px;
   text-wrap: wrap;
 }
 
@@ -84,7 +84,7 @@ body {
   grid-area: musica;
 }
 
-.main__change__dia {
+.main__dia {
   grid-area: dia;
 }
 
@@ -199,12 +199,12 @@ body {
   grid-template-rows: repeat(3, min-content);
   width: 100%;
   margin: 0 auto;
-  gap: 5px;
+  gap: 15px;
   justify-items: center;
 }
 
 .main__stack__container__images {
-  width: 85px;
+  width: 75px;
 }
 /*STACK*/
 
@@ -233,3 +233,86 @@ body {
   justify-self: center;
 }
 /*INGLES*/
+
+/*MUSICA*/
+
+.main__musica {
+  overflow: hidden;
+  grid-area: musica;
+}
+
+.main__musica__container {
+  overflow: hidden;
+}
+
+.main__musica__image {
+  width: 750px;
+  opacity: 0.4;
+}
+
+.main__musica--text {
+  grid-area: musica;
+  font-size: 1.5rem;
+  z-index: 2;
+  background-color: unset;
+}
+/*MUSICA*/
+
+.main__discord {
+  background-color: #3baa8d;
+}
+
+.main__discord__container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2px;
+  font-size: 1.5rem;
+}
+
+.main__discord__image {
+  width: 30px;
+}
+
+.main__correo {
+  background-color: #353167;
+}
+
+/*CORREO*/
+
+.main__correo__image {
+  width: 130px;
+}
+
+/*CORREO*/
+
+/*WSP*/
+
+.main__wsp {
+  background-color: #244154;
+}
+
+.main__wsp__image {
+  width: 130px;
+}
+/*WSP*/
+
+/*DAY*/
+
+.main__dia {
+  background-color: #19548c;
+}
+
+/*DAY*/
+.main__cola {
+  grid-area: certis;
+  padding: 0;
+  position: relative;
+}
+.main__cola__image {
+  z-index: 2;
+  justify-self: end;
+  align-self: flex-start;
+  width: 500px;
+  overflow: visible;
+  position: absolute;
+}
